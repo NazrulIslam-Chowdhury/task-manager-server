@@ -24,11 +24,11 @@ async function run() {
             res.send(task);
         })
 
-        // app.get('/tasks', async (req, res) => {
-        //     const query = {};
-        //     const result = await myTaskCollection.find(query).toArray();
-        //     res.send(result);
-        // })
+        app.get('/tasks', async (req, res) => {
+            const query = {};
+            const result = await myTaskCollection.find(query).toArray();
+            res.send(result);
+        })
 
     }
     finally {
